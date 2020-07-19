@@ -75,7 +75,7 @@ $ vagrant up
 ```
 Your local website can be seen at http://website.test/
 
-To access the VM, run vagrant ssh. Site can be found at /srv/www/website.test.
+To access the VM, run vagrant ssh. Site can be found at /srv/www/website.com.
 
 See the Vagrant docs for more commands.
 
