@@ -1,15 +1,7 @@
 # Demo WordPress website based on Roots stack
 
+
 ## Overview
-
-Ansible playbooks for setting up a LEMP stack for WordPress.
-
-- Local development environment with Vagrant
-- High-performance production servers
-- Zero-downtime deploys for your [Bedrock](https://roots.io/bedrock/)-based WordPress sites
-- [trellis-cli](https://github.com/roots/trellis-cli) for easier management
-
-## What's included
 
 Trellis will configure a server with the following and more:
 
@@ -36,6 +28,7 @@ Bedrock provides:
 - Autoloader for mu-plugins (use regular plugins as mu-plugins)
 - Enhanced security (separated web root and secure passwords with [wp-password-bcrypt](https://github.com/roots/wp-password-bcrypt))
 
+
 ## Documentation
 
 Full documentation is available at:
@@ -54,6 +47,7 @@ Make sure all dependencies have been installed before moving on:
 
 **Windows user?** [Read the Windows getting started docs](https://roots.io/docs/getting-started/windows/#working-with-trellis) for slightly different installation instructions.
 
+
 ## Installation
 
 The directory structure for the project looks like:
@@ -70,7 +64,7 @@ website.com/      # → Root folder for the project
 ### Get the codebase:
 
 ```bash
-$ git clone git@github.com:NicBeltramelli/website.git website.com && rm -rf website.com/.git
+$ git clone git@github.com:NicBeltramelli/website.com.git && rm -rf website.com/.git
 ```
 
 ### Local development setup:
@@ -79,8 +73,15 @@ $ git clone git@github.com:NicBeltramelli/website.git website.com && rm -rf webs
 $ cd website.com/trellis
 $ vagrant up
 ```
+Your local website can be seen at http://website.test/
+
+To access the VM, run vagrant ssh. Site can be found at /srv/www/website.test.
+
+See the Vagrant docs for more commands.
 
 ### Remote server setup (staging/production):
+
+**Real projects will be renamed and keept under version control in private repos.**
 
 A base Ubuntu 18.04 (Bionic) server is required for setting up remote servers.
 
